@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciliokenya | Professional Mental Health & Therapy Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.34.0/dist/supabase.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" data-page="home">
+                <div class="logo-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="logo-text">Conciliokenya</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                    <li><a href="#" class="nav-link" data-page="booking">Book Appointment</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <main id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Find Your Path to <span>Mental Wellness</span></h1>
+                        <p>Professional, confidential counseling services for individuals, couples, and families in Kenya. Our licensed therapists provide a safe, compassionate space for healing and growth.</p>
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-primary" data-page="booking">
+                                <i class="fas fa-calendar-check"></i> Book a Session
+                            </a>
+                            <a href="https://wa.me/254701794838?text=Hello%20Conciliokenya%2C%20I%20would%20like%20to%20inquire%20about%20counseling%20services%20and%20schedule%20an%20appointment." target="_blank" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                        <p class="hero-features">
+                            <i class="fas fa-shield-alt"></i> Confidential & Secure • <i class="fas fa-user-md"></i> Licensed Professionals • <i class="fas fa-home"></i> In-Person & Online Sessions
+                        </p>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="hero-img-container">
+                            <div class="hero-img-placeholder">
+                                <div>
+                                    <i class="fas fa-heart"></i>
+                                    <h3>Safe Healing Space</h3>
+                                    <p>Your journey to emotional wellness begins here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Counseling Services</h2>
+                    <p>We offer specialized therapeutic approaches tailored to meet your unique emotional and psychological needs.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Individual Therapy</h3>
+                        <p>One-on-one sessions focused on personal challenges, emotional healing, and developing effective coping strategies.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Anxiety & Stress</li>
+                            <li><i class="fas fa-check-circle"></i> Depression</li>
+                            <li><i class="fas fa-check-circle"></i> Personal Growth</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Couples Counseling</h3>
+                        <p>Strengthen your relationship through improved communication, conflict resolution, and emotional connection.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Communication Issues</li>
+                            <li><i class="fas fa-check-circle"></i> Trust & Infidelity</li>
+                            <li><i class="fas fa-check-circle"></i> Premarital Counseling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Family Therapy</h3>
+                        <p>Improve family dynamics, resolve conflicts, and create a healthier, more supportive home environment.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Parent-Child Issues</li>
+                            <li><i class="fas fa-check-circle"></i> Blended Families</li>
+                            <li><i class="fas fa-check-circle"></i> Communication Breakdown</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-60">
+                    <a href="#" class="btn btn-secondary" data-page="services">
+                        <i class="fas fa-arrow-right"></i> View All Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client Experiences</h2>
+                    <p>Hear from individuals and couples who have found healing and growth through our counseling services.</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Conciliokenya provided me with the tools to manage my anxiety in a way that felt natural and empowering. The therapists are compassionate and truly listen."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MK</div>
+                            <div class="author-info">
+                                <h4>Mary K.</h4>
+                                <p>Individual Therapy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Couples counseling saved our marriage. We learned to communicate effectively and understand each other's emotional needs in ways we never had before."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4>James & Diana</h4>
+                                <p>Couples Therapy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "As a young professional dealing with burnout, the team at Conciliokenya helped me develop sustainable self-care practices and boundary-setting skills."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SA</div>
+                            <div class="author-info">
+                                <h4>Samuel A.</h4>
+                                <p>Stress Management Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Services Page -->
+    <section id="services" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Comprehensive Services</h2>
+                <p>We provide specialized counseling services using evidence-based approaches tailored to your unique situation.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Individual Therapy</h3>
+                    <p>Personalized one-on-one sessions to address anxiety, depression, trauma, life transitions, and personal growth goals. Our therapists use evidence-based approaches including CBT, mindfulness, and psychodynamic therapy.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Individual Session
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Couples Counseling</h3>
+                    <p>Strengthen your relationship through improved communication, conflict resolution, and deeper emotional connection. We work with all types of couples at any stage of their relationship journey.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Couples Session
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Family Therapy</h3>
+                    <p>Address family dynamics, improve relationships, and create a healthier home environment. We help families navigate transitions, conflicts, and communication challenges together.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Family Session
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Anxiety & Depression</h3>
+                    <p>Specialized therapy to manage symptoms, develop coping strategies, and regain control over your mental health using CBT, mindfulness techniques, and holistic wellness planning.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Mental Health Session
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Youth & Adolescent Counseling</h3>
+                    <p>Specialized support for young people dealing with academic stress, social challenges, identity issues, and emotional development during critical growth stages.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Youth Session
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Workplace Stress & Burnout</h3>
+                    <p>Address work-related stress, burnout, career transitions, and work-life balance challenges with strategies to improve professional wellbeing and satisfaction.</p>
+                    <div class="card-action">
+                        <a href="#" class="btn btn-secondary btn-sm" data-page="booking">
+                            Book Career Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-70">
+                <a href="#" class="btn btn-primary" data-page="booking">
+                    <i class="fas fa-calendar-alt"></i> Schedule Your First Session
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <div class="about-img-placeholder">
+                            <div>
+                                <i class="fas fa-users"></i>
+                                <h3>Our Professional Team</h3>
+                                <p>Licensed therapists with specialized training and extensive experience in mental health counseling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h2>About Conciliokenya</h2>
+                    <p>Conciliokenya is a leading mental health practice in Kenya, founded with a mission to provide accessible, compassionate, and professional counseling services to individuals, couples, and families.</p>
+                    <p>Our team of licensed therapists brings together diverse expertise and specialized training in various therapeutic modalities, including Cognitive Behavioral Therapy (CBT), Emotionally Focused Therapy (EFT), Family Systems Therapy, and Mindfulness-Based approaches.</p>
+                    <p>We believe in creating a safe, non-judgmental space where clients can explore their thoughts and feelings, develop coping strategies, and work toward meaningful personal growth and healing.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Clients Helped</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Confidential</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-40">
+                        <a href="#" class="btn btn-primary" data-page="contact">
+                            <i class="fas fa-user-md"></i> Meet Our Therapists
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-100">
+                <div class="section-header">
+                    <h2>Our Therapeutic Approach</h2>
+                    <p>We integrate evidence-based practices with cultural sensitivity to provide effective mental health care in the Kenyan context.</p>
+                </div>
+                
+                <div class="services-grid mt-50">
+                    <div class="card">
+                        <div class="card-icon card-icon-alt">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Client-Centered Care</h3>
+                        <p>We respect your unique journey and collaborate with you to develop personalized treatment plans that align with your values and goals.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon card-icon-alt">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Evidence-Based Methods</h3>
+                        <p>Our therapeutic interventions are grounded in proven, research-supported methods for effective mental health treatment and sustainable results.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon card-icon-alt">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h3>Cultural Sensitivity</h3>
+                        <p>We understand and respect the unique cultural, social, and familial contexts that shape mental health experiences in Kenya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Page -->
+    <section id="booking" class="page booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Session</h2>
+                <p>Take the first step toward healing. Schedule a confidential session with one of our licensed counselors.</p>
+            </div>
+            
+            <div class="booking-form">
+                <form id="appointmentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" class="form-control" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="07XX XXX XXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required placeholder="you@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Service Interested In *</label>
+                            <select id="serviceType" class="form-control" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="individual">Individual Counseling</option>
+                                <option value="couples">Couples Therapy</option>
+                                <option value="family">Family Counseling</option>
+                                <option value="anxiety">Anxiety & Depression Support</option>
+                                <option value="youth">Youth & Adolescent Counseling</option>
+                                <option value="workplace">Workplace Stress & Burnout</option>
+                                <option value="notsure">Not Sure / Need Guidance</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Session Type *</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="online" name="sessionType" value="online" required>
+                                    <label for="online">Online Session (Video Call)</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="inperson" name="sessionType" value="inperson">
+                                    <label for="inperson">In-Person Session</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="phone" name="sessionType" value="phone">
+                                    <label for="phone">Phone Session</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">What would you like to address in counseling? (Optional)</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Please share any relevant information about what you'd like to work on in therapy..."></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width text-center mt-40">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Submit Booking Request
+                        </button>
+                    </div>
+                    
+                    <p class="form-note">
+                        <i class="fas fa-shield-alt"></i> Your information is secure and confidential. Our team will contact you within 24 hours to confirm your appointment.
+                    </p>
+                </form>
+            </div>
+            
+            <div class="privacy-notice">
+                <h4><i class="fas fa-exclamation-circle"></i> Important Notice</h4>
+                <p>This booking form is for appointment scheduling only. For emergency mental health support, contact local emergency services or go to the nearest hospital. In Kenya, you can also contact the Kenya Mental Health Hotline at 0800 723 723.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Reach out to our team for inquiries, appointments, or more information about our counseling services.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+254 701 794 838</p>
+                            <p class="contact-subtext">Mon-Fri: 9am-6pm | Sat: 10am-2pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+254 701 794 838</p>
+                            <a href="https://wa.me/254701794838?text=Hello%20Conciliokenya%2C%20I%20would%20like%20to%20inquire%20about%20counseling%20services%20and%20schedule%20an%20appointment." target="_blank" class="btn btn-whatsapp btn-sm">
+                                <i class="fab fa-whatsapp"></i> Start Chat
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@conciliokenya.com</p>
+                            <p class="contact-subtext">We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Our Office</h4>
+                            <p>Nairobi Counseling Center<br>Mental Wellness Plaza, Westlands<br>Nairobi, Kenya</p>
+                            <p class="contact-subtext">By appointment only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="card">
+                        <h3>Quick Response via WhatsApp</h3>
+                        <p>For fastest response, message us on WhatsApp. Our counselors can answer your questions and help schedule appointments.</p>
+                        
+                        <div class="text-center my-30">
+                            <a href="https://wa.me/254701794838?text=Hello%20Conciliokenya%2C%20I%20would%20like%20to%20inquire%20about%20counseling%20services%20and%20schedule%20an%20appointment." target="_blank" class="btn btn-whatsapp btn-lg">
+                                <i class="fab fa-whatsapp"></i> Chat with a Counselor Now
+                            </a>
+                        </div>
+                        
+                        <div class="response-time">
+                            <h4><i class="fas fa-clock"></i> Response Time</h4>
+                            <p>WhatsApp messages are typically answered within 1-2 hours during business hours (9am-6pm, Mon-Fri).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-notice mt-30">
+                        <h4><i class="fas fa-shield-alt"></i> Privacy & Confidentiality</h4>
+                        <p>All communications are confidential. WhatsApp chat is for inquiries and appointment booking only, not for emergency mental health support. In case of emergency, contact local emergency services or the Kenya Mental Health Hotline at 0800 723 723.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo" data-page="home">
+                        <i class="fas fa-heart"></i> Conciliokenya
+                    </a>
+                    <p>Professional mental health and counseling services in Kenya. Providing compassionate, confidential therapy for individuals, couples, and families.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/254701794838" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" data-page="home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#" data-page="services"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="#" data-page="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#" data-page="booking"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+                        <li><a href="#" data-page="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone-alt"></i> +254 701 794 838</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +254 701 794 838</p>
+                    <p><i class="fas fa-envelope"></i> conciliokenya@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> coming soon</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="founder.jpg.jpeg" name="founder">
+                <img src="co founder.jpeg" name="co-founder">
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Conciliokenya Counseling Services. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p class="copyright-note">Professional counseling services provided by licensed therapists. This website is for informational purposes only and not a substitute for professional medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/254701794838?text=Hello%20Conciliokenya%2C%20I%20would%20like%20to%20inquire%20about%20counseling%20services%20and%20schedule%20an%20appointment." target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> <span>Chat with a Counselor</span>
+        </a>
+    </div>
+
+    <!-- Add to index.html -->
+<div id="adminLogin" style="display: none;">
+    <input type="password" id="adminPassword" placeholder="Admin Password">
+    <button onclick="loginAdmin()">Login</button>
+</div>
+
+<div id="adminDashboard" style="display: none;">
+    <h2>Appointment Dashboard</h2>
+    <div id="appointmentsList"></div>
+</div>
+
+<script>
+// Simple password protection
+function loginAdmin() {
+    const password = document.getElementById('adminPassword').value;
+    if (password === 'your-admin-password') {
+        document.getElementById('adminLogin').style.display = 'none';
+        document.getElementById('adminDashboard').style.display = 'block';
+        loadAppointments();
+    } else {
+        alert('Incorrect password');
+    }
+}
+
+async function loadAppointments() {
+    const { data, error } = await supabase
+        .from('appointments')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .limit(50);
+    
+    if (error) {
+        console.error('Error loading appointments:', error);
+        return;
+    }
+    
+    // Display appointments in a table
+    // You can expand this to show a proper admin dashboard
+}
+</script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
